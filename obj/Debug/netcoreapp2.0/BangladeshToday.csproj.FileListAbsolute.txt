@@ -1,0 +1,59 @@
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb
+F:\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csprojAssemblyReference.cache
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+C:\Users\IDB-PC15\Downloads\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb
+C:\Users\IDB-PC15\Desktop\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csprojAssemblyReference.cache
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csprojAssemblyReference.cache
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+F:\Final Project  of NewsPaper\final project with authentication\Project 10\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csprojAssemblyReference.cache
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb

@@ -1,0 +1,139 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-BangladeshToday-9FEB69B5-415D-4A6D-B179-ED0ACF81FB4A</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\itemimages\" />
+    <Folder Include="wwwroot\Videos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Account\AccessDenied.cshtml" />
+    <None Include="Views\Account\ConfirmEmail.cshtml" />
+    <None Include="Views\Account\ExternalLogin.cshtml" />
+    <None Include="Views\Account\ForgotPassword.cshtml" />
+    <None Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <None Include="Views\Account\Lockout.cshtml" />
+    <None Include="Views\Account\Login.cshtml" />
+    <None Include="Views\Account\LoginWith2fa.cshtml" />
+    <None Include="Views\Account\LoginWithRecoveryCode.cshtml" />
+    <None Include="Views\Account\Register.cshtml" />
+    <None Include="Views\Account\ResetPassword.cshtml" />
+    <None Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <None Include="Views\Account\SignedOut.cshtml" />
+    <None Include="Views\Home\About.cshtml" />
+    <None Include="Views\Home\Contact.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Manage\ChangePassword.cshtml" />
+    <None Include="Views\Manage\Disable2fa.cshtml" />
+    <None Include="Views\Manage\EnableAuthenticator.cshtml" />
+    <None Include="Views\Manage\ExternalLogins.cshtml" />
+    <None Include="Views\Manage\GenerateRecoveryCodes.cshtml" />
+    <None Include="Views\Manage\Index.cshtml" />
+    <None Include="Views\Manage\ResetAuthenticator.cshtml" />
+    <None Include="Views\Manage\SetPassword.cshtml" />
+    <None Include="Views\Manage\ShowRecoveryCodes.cshtml" />
+    <None Include="Views\Manage\TwoFactorAuthentication.cshtml" />
+    <None Include="Views\Manage\_Layout.cshtml" />
+    <None Include="Views\Manage\_ManageNav.cshtml" />
+    <None Include="Views\Manage\_StatusMessage.cshtml" />
+    <None Include="Views\Manage\_ViewImports.cshtml" />
+    <None Include="Views\Newsinfoes\Create.cshtml" />
+    <None Include="Views\Newsinfoes\Delete.cshtml" />
+    <None Include="Views\Newsinfoes\Details.cshtml" />
+    <None Include="Views\Newsinfoes\Edit.cshtml" />
+    <None Include="Views\Newsinfoes\Index.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
+    <None Include="wwwroot\assets1\css\bootstrap.css" />
+    <None Include="wwwroot\assets1\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets1\css\demo.css" />
+    <None Include="wwwroot\assets1\css\demo.css.map" />
+    <None Include="wwwroot\assets1\css\main.css" />
+    <None Include="wwwroot\assets1\css\main.css.map" />
+    <None Include="wwwroot\assets1\img\apple-icon.png" />
+    <None Include="wwwroot\assets1\img\favicon.png" />
+    <None Include="wwwroot\assets1\img\login-bg.jpg" />
+    <None Include="wwwroot\assets1\img\logo-dark.png" />
+    <None Include="wwwroot\assets1\img\profile-bg.png" />
+    <None Include="wwwroot\assets1\img\user-medium.png" />
+    <None Include="wwwroot\assets1\img\user.png" />
+    <None Include="wwwroot\assets1\img\user1.png" />
+    <None Include="wwwroot\assets1\img\user2.png" />
+    <None Include="wwwroot\assets1\img\user3.png" />
+    <None Include="wwwroot\assets1\img\user4.png" />
+    <None Include="wwwroot\assets1\img\user5.png" />
+    <None Include="wwwroot\assets1\scripts\klorofil-common.js" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap-theme.css" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets1\vendor\bootstrap\js\npm.js" />
+    <None Include="wwwroot\assets1\vendor\chartist\css\chartist-custom.css" />
+    <None Include="wwwroot\assets1\vendor\chartist\css\chartist-custom.css.map" />
+    <None Include="wwwroot\assets1\vendor\chartist\css\chartist.css" />
+    <None Include="wwwroot\assets1\vendor\chartist\css\chartist.min.css" />
+    <None Include="wwwroot\assets1\vendor\chartist\js\chartist.js" />
+    <None Include="wwwroot\assets1\vendor\chartist\js\chartist.min.js" />
+    <None Include="wwwroot\assets1\vendor\chartist\map\chartist.css.map" />
+    <None Include="wwwroot\assets1\vendor\chartist\map\chartist.min.js.map" />
+    <None Include="wwwroot\assets1\vendor\chartist\scss\chartist.scss" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\css\font-awesome.css" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\css\font-awesome.min.css" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\assets1\vendor\jquery-slimscroll\jquery.slimscroll.js" />
+    <None Include="wwwroot\assets1\vendor\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\angular.easypiechart.js" />
+    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\angular.easypiechart.min.js" />
+    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\easypiechart.js" />
+    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\easypiechart.min.js" />
+    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\jquery.easypiechart.js" />
+    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\jquery.easypiechart.min.js" />
+    <None Include="wwwroot\assets1\vendor\jquery\jquery.js" />
+    <None Include="wwwroot\assets1\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\assets1\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.eot" />
+    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.svg" />
+    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.ttf" />
+    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.woff" />
+    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.woff2" />
+    <None Include="wwwroot\assets1\vendor\linearicons\style.css" />
+    <None Include="wwwroot\assets1\vendor\toastr\toastr.css" />
+    <None Include="wwwroot\assets1\vendor\toastr\toastr.js" />
+    <None Include="wwwroot\assets1\vendor\toastr\toastr.min.css" />
+    <None Include="wwwroot\assets1\vendor\toastr\toastr.min.js" />
+  </ItemGroup>
+
+</Project>

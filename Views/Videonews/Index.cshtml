@@ -1,0 +1,73 @@
+﻿@model IEnumerable<BangladeshToday.Models.Videonews>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered table-condensed table-responsive table-striped table-hover">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Keyword)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Datetime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Path)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Keyword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datetime)
+            </td>
+            <td style="margin:0; padding:0" width="20%">
+                @if (item.Path != null && System.IO.File.Exists(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot", "Videos\\" + item.Path)))
+                {
+                    <video style="width:100%; height:130px" controls>
+                        <source src="~/Videos/@item.Path" type="video/mp4">
+                    </video>
+                    <br />
+                    @Html.ActionLink("Change Video", "UploadFile", new { Vnewsserial = item.VideoNewsId, @class = "btn btn-primary" })
+                }
+                else
+                {
+                    <img src="~/Videos/novideo.png" alt="No Image" width="100" height="100" class="img-responsive" style="border:1px solid #808080" />
+                    <br />
+                    @Html.ActionLink("Upload Video", "UploadFile", new { id = item.VideoNewsId })
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VideoNewsId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VideoNewsId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VideoNewsId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

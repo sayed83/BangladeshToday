@@ -1,0 +1,118 @@
+﻿@model IEnumerable<BangladeshToday.Models.Newsinfo>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+@*<link href="//bootswatch.com/3/flatly/bootstrap.min.css" rel="stylesheet" />*@
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary btn-xs">Create New</a>
+</p>
+<table class="table table-condensed table-bordered table-responsive table-hover table-striped" id="myTable" style="cursor:pointer;">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Keyword)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="width:15%;">
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td style="width:10%;">
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td class="my" style="width:30%";>
+                    @Html.Raw(item.Description)
+                </td>
+                <td style="width:10%" ;>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td style="width:10%" ;>
+                    @Html.DisplayFor(modelItem => item.Datetime)
+                </td>
+                <td style="width:10%" ;>
+                    @Html.DisplayFor(modelItem => item.Keyword)
+                </td>
+                <td style="width:15%" ;>
+                    <a asp-action="Edit" asp-route-id="@item.Newsserial" class="btn btn-success btn-xs">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Newsserial" class="btn btn-primary btn-xs">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Newsserial" class="btn btn-danger btn-xs">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+
+    @*<script src="~/js/jquery-1.10.2.js"></script>*@
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // DataTable Initialization
+            $('#myTable').DataTable();
+
+
+            // Show More & Show Less Started
+            var readMoreHtml = $(".my").html();
+            var lessText = readMoreHtml.substr(0, 200);
+            if (readMoreHtml.length > 200) {
+                $(".my").html(lessText).append("<a href='#' class='btn btn-primary btn-xs read-more-link'>Show More</a>");
+            }
+            else {
+                $(".my").html(readMoreHtml);
+            }
+
+            $("body").on("click", ".read-more-link", function (event) {
+                event.preventDefault();
+                $(this).parent(".my").html(readMoreHtml).append("<a href='' class='btn show-less btn-xs btn-primary'>Show Less</a>");
+            });
+            $("body").on("click", ".show-less-link", function (event) {
+                event.preventDefault();
+                $(this).parent(".my").html(readMoreHtml.substr(0, 200)).append("<a href='' class='btn btn-xs btn-primary show-more'>Show More</a>");
+            })
+            // Show More & Show Less Ended
+
+
+            // Show More & Show Less For Paging And DataTable Length Started
+            $("body .paginate_button, .dataTables_length, .dataTables_filter").click(function () {
+                //alert("aa");
+
+                var readMoreHtml = $(".my").html();
+                var lessText = readMoreHtml.substr(0, 200);
+                if (readMoreHtml.length > 200) {
+                    $(".my").html(lessText).append("<a href='#' class='btn btn-primary btn-xs read-more-link'>Show More</a>");
+                }
+                else {
+                    $(".my").html(readMoreHtml);
+                }
+            });
+            // Show More & Show Less For Paging And DataTable Length Ended
+
+        })
+    </script>
+}

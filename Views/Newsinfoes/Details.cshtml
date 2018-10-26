@@ -1,0 +1,54 @@
+﻿@model BangladeshToday.Models.Newsinfo
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+<h2>Details</h2>
+
+<div>
+    <h4>Newsinfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Datetime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Datetime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Keyword)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Keyword)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Newsserial" class="btn btn-success">Edit</a>
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
