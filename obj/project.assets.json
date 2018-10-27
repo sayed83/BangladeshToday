@@ -13266,11 +13266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Exam11 Project\\Final Project\\Final Project\\BangladeshToday_Solution\\BangladeshToday\\BangladeshToday.csproj",
+      "projectUniqueName": "E:\\Exam11 Project\\My Final Project\\2018-10-26\\BangladeshToday_Solution\\BangladeshToday\\BangladeshToday.csproj",
       "projectName": "BangladeshToday",
-      "projectPath": "E:\\Exam11 Project\\Final Project\\Final Project\\BangladeshToday_Solution\\BangladeshToday\\BangladeshToday.csproj",
+      "projectPath": "E:\\Exam11 Project\\My Final Project\\2018-10-26\\BangladeshToday_Solution\\BangladeshToday\\BangladeshToday.csproj",
       "packagesPath": "C:\\Users\\Sayed\\.nuget\\packages\\",
-      "outputPath": "E:\\Exam11 Project\\Final Project\\Final Project\\BangladeshToday_Solution\\BangladeshToday\\obj\\",
+      "outputPath": "E:\\Exam11 Project\\My Final Project\\2018-10-26\\BangladeshToday_Solution\\BangladeshToday\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

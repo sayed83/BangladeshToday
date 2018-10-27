@@ -46,6 +46,21 @@
                 <span asp-validation-for="Keyword" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="CaptionPicture" class="control-label"></label>
+                <input asp-for="CaptionPicture" placeholder="Caption Picture" class="form-control" />
+                <span asp-validation-for="CaptionPicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Editor" class="control-label"></label>
+                <input asp-for="Editor" placeholder="Editor" class="form-control" />
+                <span asp-validation-for="Editor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeatureNews" class="control-label"></label>
+                <input asp-for="FeatureNews" placeholder="Feature News" class="form-control" />
+                <span asp-validation-for="FeatureNews" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </form>

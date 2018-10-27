@@ -12,17 +12,20 @@
 <h2>Create</h2>
 <hr />
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
+
+                <input asp-for="Title" placeholder="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
+
+                <input asp-for="Category" placeholder="Category" class="form-control" />
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -31,42 +34,68 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Author" class="control-label"></label>
-                <input asp-for="Author" class="form-control" />
+
+                <input asp-for="Author" placeholder="Author" class="form-control" />
                 <span asp-validation-for="Author" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Datetime" class="control-label"></label>
-                <input asp-for="Datetime" class="form-control" />
+
+                <input asp-for="Datetime" placeholder="Date" id="pickDate" class="form-control" />
                 <span asp-validation-for="Datetime" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Keyword" class="control-label"></label>
-                <input asp-for="Keyword" class="form-control" />
+
+                <input asp-for="Keyword" placeholder="Keyword" class="form-control" />
                 <span asp-validation-for="Keyword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-success" />
+
+                <input asp-for="CaptionPicture"  class="form-control" />
+                <span asp-validation-for="CaptionPicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+
+                <input asp-for="Editor"  class="form-control" />
+                <span asp-validation-for="Editor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+
+                <input asp-for="FeatureNews"  class="form-control" />
+                <span asp-validation-for="FeatureNews" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success btn-xs" />
+                <a asp-action="Index" class="btn btn-primary btn-xs">Back to List</a>
             </div>
         </form>
     </div>
+
 </div>
 
-<div>
-    <a asp-action="Index" class="btn btn-primary btn-xs">Back to List</a>
-</div>
+
 
 @section Scripts {
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    
     <script>
         $(document).ready(function () {
             $('#summernote').summernote({
                 tabsize: 2,
                 height: 200
             });
+
+
+            
+            $('#pickDate').datepicker({
+                autoclose: true,
+                format: "dd-M-yyyy",
+                todayHighlight: true,
+                container: '#depBox'
+            });
         });
+
     </script>
 
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

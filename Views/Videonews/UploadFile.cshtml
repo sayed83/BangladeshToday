@@ -68,15 +68,15 @@
 
 
 <div class="row">
-    <hr/>
-    Videos
-    <hr />
+    
     @foreach (var item in ViewBag.pictures)
     {
     <div class="col-lg-2 col-sm-2">
         @*<img class="img-responsive thumb-img" alt="@item.VideoPath" src="~/itemimages/@item.VideoPath" />
         <br />
         <div class="act btn btn-success" style="text-align:center">Activate It</div>*@
+
+
         @if (item.VideoPath == ViewBag.apath)
         {
             <video style="width:100%; height:130px" controls>
@@ -126,14 +126,14 @@ Active Picture: @ViewData["apath"]
                 contentType: "application/json",
                 success: function (data) {
                     //alert("Picture Activated Successfully");
-                    //$(this).content('Activated');
+                    $(this).content('Activated');
 
-                    /*
+                   
 
                     $('.collapsiblock').not(this).each(function () {
                         $(this).slideUp();
                     });
-                    */
+                    
 
                 },
                 error: function (xhr) {
@@ -149,6 +149,5 @@ Active Picture: @ViewData["apath"]
 
 
 <div>
-    @*<a asp-action="Edit" asp-route-id="@Model.VideoNewsId">Edit</a> |*@
     <a asp-action="Index">Back to List</a>
 </div>

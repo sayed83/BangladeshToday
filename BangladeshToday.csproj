@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\itemimages\" />
+    <Folder Include="wwwroot\My\" />
     <Folder Include="wwwroot\Videos\" />
   </ItemGroup>
 
@@ -65,75 +66,6 @@
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <None Include="Views\_ViewImports.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
-    <None Include="wwwroot\assets1\css\bootstrap.css" />
-    <None Include="wwwroot\assets1\css\bootstrap.min.css" />
-    <None Include="wwwroot\assets1\css\demo.css" />
-    <None Include="wwwroot\assets1\css\demo.css.map" />
-    <None Include="wwwroot\assets1\css\main.css" />
-    <None Include="wwwroot\assets1\css\main.css.map" />
-    <None Include="wwwroot\assets1\img\apple-icon.png" />
-    <None Include="wwwroot\assets1\img\favicon.png" />
-    <None Include="wwwroot\assets1\img\login-bg.jpg" />
-    <None Include="wwwroot\assets1\img\logo-dark.png" />
-    <None Include="wwwroot\assets1\img\profile-bg.png" />
-    <None Include="wwwroot\assets1\img\user-medium.png" />
-    <None Include="wwwroot\assets1\img\user.png" />
-    <None Include="wwwroot\assets1\img\user1.png" />
-    <None Include="wwwroot\assets1\img\user2.png" />
-    <None Include="wwwroot\assets1\img\user3.png" />
-    <None Include="wwwroot\assets1\img\user4.png" />
-    <None Include="wwwroot\assets1\img\user5.png" />
-    <None Include="wwwroot\assets1\scripts\klorofil-common.js" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap-theme.css" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap-theme.min.css" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap.css" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\css\bootstrap.min.css" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\js\bootstrap.js" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\js\bootstrap.min.js" />
-    <None Include="wwwroot\assets1\vendor\bootstrap\js\npm.js" />
-    <None Include="wwwroot\assets1\vendor\chartist\css\chartist-custom.css" />
-    <None Include="wwwroot\assets1\vendor\chartist\css\chartist-custom.css.map" />
-    <None Include="wwwroot\assets1\vendor\chartist\css\chartist.css" />
-    <None Include="wwwroot\assets1\vendor\chartist\css\chartist.min.css" />
-    <None Include="wwwroot\assets1\vendor\chartist\js\chartist.js" />
-    <None Include="wwwroot\assets1\vendor\chartist\js\chartist.min.js" />
-    <None Include="wwwroot\assets1\vendor\chartist\map\chartist.css.map" />
-    <None Include="wwwroot\assets1\vendor\chartist\map\chartist.min.js.map" />
-    <None Include="wwwroot\assets1\vendor\chartist\scss\chartist.scss" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\css\font-awesome.css" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\css\font-awesome.min.css" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <None Include="wwwroot\assets1\vendor\font-awesome\fonts\FontAwesome.otf" />
-    <None Include="wwwroot\assets1\vendor\jquery-slimscroll\jquery.slimscroll.js" />
-    <None Include="wwwroot\assets1\vendor\jquery-slimscroll\jquery.slimscroll.min.js" />
-    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\angular.easypiechart.js" />
-    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\angular.easypiechart.min.js" />
-    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\easypiechart.js" />
-    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\easypiechart.min.js" />
-    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\jquery.easypiechart.js" />
-    <None Include="wwwroot\assets1\vendor\jquery.easy-pie-chart\jquery.easypiechart.min.js" />
-    <None Include="wwwroot\assets1\vendor\jquery\jquery.js" />
-    <None Include="wwwroot\assets1\vendor\jquery\jquery.min.js" />
-    <None Include="wwwroot\assets1\vendor\jquery\jquery.min.map" />
-    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.eot" />
-    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.svg" />
-    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.ttf" />
-    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.woff" />
-    <None Include="wwwroot\assets1\vendor\linearicons\fonts\Linearicons-Free.woff2" />
-    <None Include="wwwroot\assets1\vendor\linearicons\style.css" />
-    <None Include="wwwroot\assets1\vendor\toastr\toastr.css" />
-    <None Include="wwwroot\assets1\vendor\toastr\toastr.js" />
-    <None Include="wwwroot\assets1\vendor\toastr\toastr.min.css" />
-    <None Include="wwwroot\assets1\vendor\toastr\toastr.min.js" />
   </ItemGroup>
 
 </Project>

@@ -4,72 +4,123 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/Admin_Layout.cshtml";
 }
-@*<link href="//bootswatch.com/3/flatly/bootstrap.min.css" rel="stylesheet" />*@
-<h2>Index</h2>
+
+@section Assets
+    {
+    <script src="~/assets/js/jquery.dataTables.min.js"></script>
+    <script src="~/assets/js/jquery.dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/js/dataTables.buttons.min.js"></script>
+    <script src="~/assets/js/buttons.flash.min.js"></script>
+    <script src="~/assets/js/buttons.html5.min.js"></script>
+    <script src="~/assets/js/buttons.print.min.js"></script>
+    <script src="~/assets/js/buttons.colVis.min.js"></script>
+    <script src="~/assets/js/dataTables.select.min.js"></script>
+    <script src="~/assets/js/jquery-ui.min.js"></script>
+    <script src="~/assets/js/jquery.ui.touch-punch.min.js"></script>
+}
+
+
+
+<h2 class="text-info text-uppercase">Index</h2>
 
 <p>
     <a asp-action="Create" class="btn btn-primary btn-xs">Create New</a>
 </p>
 <table class="table table-condensed table-bordered table-responsive table-hover table-striped" id="myTable" style="cursor:pointer;">
     <thead>
-        <tr>
-            <th>
+        <tr class="text-center">
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Newsserial)
+            </th>
+            <th class="text-center">
                 @Html.DisplayNameFor(model => model.Title)
             </th>
-            <th>
+            <th class="text-center">
                 @Html.DisplayNameFor(model => model.Category)
             </th>
-            <th>
+            <th class="text-center">
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
+            <th class="text-center">
                 @Html.DisplayNameFor(model => model.Author)
             </th>
-            <th>
+            <th class="text-center">
                 @Html.DisplayNameFor(model => model.Datetime)
             </th>
-            <th>
+            <th class="text-center">
                 @Html.DisplayNameFor(model => model.Keyword)
             </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.CaptionPicture)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Editor)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FeatureNews)
+            </th>
             <th></th>
+
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td style="width:15%;">
-                    @Html.DisplayFor(modelItem => item.Title)
-                </td>
-                <td style="width:10%;">
-                    @Html.DisplayFor(modelItem => item.Category)
-                </td>
-                <td class="my" style="width:30%";>
-                    @Html.Raw(item.Description)
-                </td>
-                <td style="width:10%" ;>
-                    @Html.DisplayFor(modelItem => item.Author)
-                </td>
-                <td style="width:10%" ;>
-                    @Html.DisplayFor(modelItem => item.Datetime)
-                </td>
-                <td style="width:10%" ;>
-                    @Html.DisplayFor(modelItem => item.Keyword)
-                </td>
-                <td style="width:15%" ;>
-                    <a asp-action="Edit" asp-route-id="@item.Newsserial" class="btn btn-success btn-xs">Edit</a>
-                    <a asp-action="Details" asp-route-id="@item.Newsserial" class="btn btn-primary btn-xs">Details</a>
-                    <a asp-action="Delete" asp-route-id="@item.Newsserial" class="btn btn-danger btn-xs">Delete</a>
-                </td>
-            </tr>
+        <tr>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Newsserial)
+            </td>
+            <td style="width:15%;" class="text-center">
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td style="width:10%;" class="text-center">
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td class="my text-center" style="width:30%;">
+                @Html.Raw(item.Description)
+            </td>
+            <td style="width:10%;" class="text-center">
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td style="width:10%;" class="text-center">
+                @Html.DisplayFor(modelItem => item.Datetime)
+            </td>
+            <td style="width:10%;" class="text-center">
+                @Html.DisplayFor(modelItem => item.Keyword)
+            </td>
+
+            <td class="text-center">
+                @Html.DisplayNameFor(model => model.CaptionPicture)
+            </td>
+            <td class="text-center">
+                @Html.DisplayNameFor(model => model.Editor)
+            </td>
+            <td class="text-center">
+                @Html.DisplayNameFor(model => model.FeatureNews)
+            </td>
+            <td style="width:15%;" class="text-center">
+                <a asp-action="Edit" asp-route-id="@item.Newsserial">
+                    <span class="blue">
+                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                    </span>
+                </a>&emsp;
+                <a asp-action="Details" asp-route-id="@item.Newsserial">
+                    <span class="green">
+                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                    </span>
+                </a>&emsp;
+                <a asp-action="Delete" asp-route-id="@item.Newsserial">
+                    <span class="red">
+                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                    </span>
+                </a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>
 
 @section scripts{
-
-    @*<script src="~/js/jquery-1.10.2.js"></script>*@
-    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function () {
 
@@ -93,7 +144,7 @@
             });
             $("body").on("click", ".show-less-link", function (event) {
                 event.preventDefault();
-                $(this).parent(".my").html(readMoreHtml.substr(0, 200)).append("<a href='' class='btn btn-xs btn-primary show-more'>Show More</a>");
+                $(this).parent(".my").html(readMoreHtml.substr(0, 200)).append("<a href='' class='btn btn-xs btn-info show-more'>Show More</a>");
             })
             // Show More & Show Less Ended
 
