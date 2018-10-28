@@ -57,3 +57,39 @@ E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\Banglades
 E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
 E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
 E:\Exam11 Project\Final Project\Final Project\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csprojAssemblyReference.cache
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+E:\Exam11 Project\My Final Project\2018-10-26\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb
+G:\Exam11\2018-10-27\2018-10-27\2018-10-27\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csprojAssemblyReference.cache
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.deps.json
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.json
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.runtimeconfig.dev.json
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.dll
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\bin\Debug\netcoreapp2.0\BangladeshToday.pdb
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csprojAssemblyReference.cache
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.csproj.CoreCompileInputs.cache
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfoInputs.cache
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.AssemblyInfo.cs
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.dll
+E:\Exam11 Project\My Final Project\Sayed\2018-10-27\BangladeshToday_Solution\BangladeshToday_Solution\BangladeshToday\obj\Debug\netcoreapp2.0\BangladeshToday.pdb

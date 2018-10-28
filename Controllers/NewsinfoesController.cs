@@ -53,7 +53,7 @@ namespace BangladeshToday.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Newsserial,Title,Category,Description,Author,Datetime,Keyword")] Newsinfo newsinfo)
+        public async Task<IActionResult> Create([Bind("Newsserial,Title,Category,Description,Author,Datetime,Keyword,CaptionPicture,Editor,FeatureNews")] Newsinfo newsinfo)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace BangladeshToday.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Newsserial,Title,Category,Description,Author,Datetime,Keyword")] Newsinfo newsinfo)
+        public async Task<IActionResult> Edit(int id, [Bind("Newsserial,Title,Category,Description,Author,Datetime,Keyword,CaptionPicture,Editor,FeatureNews")] Newsinfo newsinfo)
         {
             if (id != newsinfo.Newsserial)
             {

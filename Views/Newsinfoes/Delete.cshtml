@@ -48,11 +48,29 @@
         <dd>
             @Html.DisplayFor(model => model.Keyword)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CaptionPicture)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CaptionPicture)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Editor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Editor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FeatureNews)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FeatureNews)
+        </dd>
     </dl>
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Newsserial" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn btn-danger btn-xs" /> |
+        <a asp-action="Index" class="btn btn-info btn-xs">Back to List</a>
     </form>
 </div>

@@ -59,9 +59,19 @@ namespace BangladeshToday.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(videonews);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                var ckid = _context.Videonews.Where(c => c.VideoNewsId == videonews.VideoNewsId).Count();
+                if (ckid>0)
+                {
+                    ModelState.AddModelError("", "This vedeo news id " + videonews.VideoNewsId + " is alredy exists!");
+                }
+                else
+                {
+                    _context.Add(videonews);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+               
             }
             return View(videonews);
         }
@@ -138,11 +148,17 @@ namespace BangladeshToday.Controllers
         // POST: Videonews/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var videonews = await _context.Videonews.SingleOrDefaultAsync(m => m.VideoNewsId == id);
-            _context.Videonews.Remove(videonews);
-            await _context.SaveChangesAsync();
+        public IActionResult DeleteConfirmed(int id)
+        {   /*Delete code from parent table */
+            var c1 = (from a in _context.Allvideo where a.VideoId == id select a);           
+            _context.RemoveRange(c1);
+            _context.SaveChanges();
+
+
+            /*Delete code from chilled table */
+            var c = _context.Videonews.Find(id);
+            _context.Videonews.Remove(c);
+            _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
 
@@ -153,19 +169,19 @@ namespace BangladeshToday.Controllers
 
 
         // UploadFile Get
-        public ActionResult UploadFile(int Vnewsserial)
+        public ActionResult UploadFile(int id)
         {
 
             List<Allvideo> content = (from p in _context.Allvideo
-                                          where p.VideoId == Vnewsserial
+                                          where p.VideoId == id
                                       orderby p.VideoSerial
                                           select p).ToList();
             ViewData["pictures"] = content;
-            string path = (from s in _context.Videonews where s.VideoNewsId == Vnewsserial select s.Path).FirstOrDefault();
+            string path = (from s in _context.Videonews where s.VideoNewsId == id select s.Path).FirstOrDefault();
             ViewData["apath"] = path;
 
 
-            return View(_context.Videonews.Find(Vnewsserial));
+            return View(_context.Videonews.Find(id));
         }
 
         // UploadFile Post
@@ -178,7 +194,7 @@ namespace BangladeshToday.Controllers
                     return Content("file not selected");
                 if (file.Length > 0)
                 {
-                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "itemimages/" + file.FileName);
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Videos/" + file.FileName);
 
                     using (var stream = new FileStream(path, FileMode.Create))
                     {

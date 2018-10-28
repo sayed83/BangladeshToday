@@ -67,28 +67,25 @@
 </div>
 
 
-<div class="row">
-    <hr/>
-    Videos
-    <hr />
+<div class="row">  
     @foreach (var item in ViewBag.pictures)
     {
     <div class="col-lg-2 col-sm-2">
-        @*<img class="img-responsive thumb-img" alt="@item.VideoPath" src="~/itemimages/@item.VideoPath" />
-        <br />
-        <div class="act btn btn-success" style="text-align:center">Activate It</div>*@
+        
         @if (item.VideoPath == ViewBag.apath)
         {
-            <video style="width:100%; height:130px" controls>
+            <video alt="@item.VideoPath" style="width:100%; height:130px" controls>
                 <source src="~/Videos/@item.VideoPath" type="video/mp4">
+                <source src="~/Videos/@item.VideoPath" type=video/ogg />
             </video>
             <br />
             <div class="label-primary act" style="text-align:center">Activated</div>
         }
         else
         {
-            <video style="width:100%; height:130px" controls>
+            <video alt="@item.VideoPath" style="width:100%; height:130px" controls>
                 <source src="~/Videos/@item.VideoPath" type="video/mp4">
+                <source src="~/Videos/@item.VideoPath" type=video/ogg />
             </video>
             <br />
             <div class="act btn btn-success" style="text-align:center">Activate It</div>
@@ -103,7 +100,7 @@
 <hr />
 
 Active Picture: @ViewData["apath"]
-
+<script src="~/js/jquery-1.10.2.js"></script>
 <script type="text/javascript">
 
     $(function () {
@@ -114,7 +111,7 @@ Active Picture: @ViewData["apath"]
             $(this).attr("class", "btn btn-primary act");
             // $(this).attr("cursor", "text");
 
-            $('.act').not(this).html("Activate It").attr("class", 'act btn btn-success');//.attr("class","pointer");
+            $('.act').not(this).html("Activate It").attr("class", 'act btn btn-success');
 
             path = $(this).parent().children((':first-child')).attr("alt");
             qs = "id=" + id1 + "&path=" + path;
@@ -126,14 +123,13 @@ Active Picture: @ViewData["apath"]
                 contentType: "application/json",
                 success: function (data) {
                     //alert("Picture Activated Successfully");
-                    //$(this).content('Activated');
 
-                    /*
 
+                    $(this).content('Activated');                      
                     $('.collapsiblock').not(this).each(function () {
                         $(this).slideUp();
                     });
-                    */
+                    
 
                 },
                 error: function (xhr) {
@@ -149,6 +145,5 @@ Active Picture: @ViewData["apath"]
 
 
 <div>
-    @*<a asp-action="Edit" asp-route-id="@Model.VideoNewsId">Edit</a> |*@
     <a asp-action="Index">Back to List</a>
 </div>

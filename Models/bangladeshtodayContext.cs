@@ -75,7 +75,15 @@ namespace BangladeshToday.Models
                 entity.Property(e => e.Title)
                     .IsRequired()
                     .HasColumnName("title");
+
+
+                entity.Property(e => e.CaptionPicture).HasColumnName("captionpicture");
+                entity.Property(e => e.Editor).HasColumnName("editor");
+                entity.Property(e => e.FeatureNews).HasColumnName("featurenews");
+
             });
+
+            
 
             modelBuilder.Entity<UserDetails>(entity =>
             {

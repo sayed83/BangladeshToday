@@ -10,47 +10,51 @@
 <h4>Videonews</h4>
 <hr />
 <div class="row">
+    <div class="col-md-3">
+
+    </div>
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="VideoNewsId" class="control-label"></label>
-                <input asp-for="VideoNewsId" class="form-control" />
+                @*<label asp-for="VideoNewsId" class="control-label"></label>*@
+                <input asp-for="VideoNewsId" placeholder="VideoNews Id" class="form-control" />
                 <span asp-validation-for="VideoNewsId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
+                @*<label asp-for="Title" class="control-label"></label>*@
+                <input asp-for="Title" placeholder="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
+                @*<label asp-for="Category" class="control-label"></label>*@
+                <input asp-for="Category" placeholder="Category" class="form-control" />
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Keyword" class="control-label"></label>
-                <input asp-for="Keyword" class="form-control" />
+                @*<label asp-for="Keyword" class="control-label"></label>*@
+                <input asp-for="Keyword" placeholder="Keyword" class="form-control" />
                 <span asp-validation-for="Keyword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Datetime" class="control-label"></label>
-                <input asp-for="Datetime" class="form-control" />
+                @*<label asp-for="Datetime" class="control-label"></label>*@
+                <input asp-for="Datetime" placeholder="Date Time" class="form-control" />
                 <span asp-validation-for="Datetime" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Path" class="control-label"></label>
-                <input asp-for="Path" class="form-control" />
+                @*<label asp-for="Path" class="control-label"></label>*@
+                <input asp-for="Path" placeholder="Path" class="form-control" />
                 <span asp-validation-for="Path" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-success btn-xs " />
+                <a asp-action="Index" class="btn btn-info btn-xs " >Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+   
 </div>
 
