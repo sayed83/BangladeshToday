@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BangladeshToday.Models;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System.Collections;
 
 namespace BangladeshToday.Controllers
 {
@@ -147,6 +150,41 @@ namespace BangladeshToday.Controllers
         private bool NewsinfoExists(int id)
         {
             return _context.Newsinfo.Any(e => e.Newsserial == id);
+        }
+
+        public ActionResult CaptionImage(int id)
+        {
+            return View(_context.Newsinfo.Find(id));
+        }
+
+        [HttpPost, ActionName("CaptionImage")]
+        public ActionResult CaptionImage(IFormFile file, int id)
+        {
+            try
+            {
+                if (file == null || file.Length == 0)
+                    return Content("File not selceted");
+                if (file.Length > 0)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "featuresNews/" + file.FileName);
+
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+                    Newsinfo st = (from s in _context.Newsinfo where s.Newsserial == id select s).First();
+                    st.CaptionPicture = file.FileName;
+                    _context.SaveChanges();
+                }
+                ViewBag.Message = "File Uploaded Successfully!" + ":" + id;
+                return RedirectToAction("Index");
+            }
+            catch (Exception)
+            {
+
+                ViewBag.Message = "File upload failes!";
+                return View();
+            }
         }
     }
 }

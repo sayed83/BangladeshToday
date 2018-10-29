@@ -4,7 +4,7 @@
 }
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="BangladeshToday">
 <head>
     <title>Aha Magazine | Home</title>
 
@@ -15,6 +15,9 @@
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet'>
+    <script src="~/js/angular.min.js"></script>
+    <script src="~/js/jquery-1.10.2.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- Css -->
     <link rel="stylesheet" href="~/NewsHome/css/bootstrap.min.css" />
@@ -29,10 +32,11 @@
 
     <!-- Lazyload -->
     <script src="js/lazysizes.min.js"></script>
+    <script src="~/js/AngularforHomepage.js"></script>
 
 </head>
 
-<body class="bg-light">
+<body class="bg-light" ng-controller="TestController">
 
     <!-- Preloader -->
     <div class="loader-mask">
@@ -168,8 +172,11 @@
                                 <li class="active">
                                     <a href="index.html">Home</a>
                                 </li>
+                                <li ng-repeat="category in Categories">
+                                    <a href="/{{category}}">{{category}}</a>
+                                </li>
 
-                                <li class="nav__dropdown">
+                                @*<li class="nav__dropdown">
                                     <a href="#">Posts</a>
                                     <ul class="nav__dropdown-menu">
                                         <li><a href="single-post-gallery.html">Gallery Post</a></li>
@@ -200,7 +207,7 @@
 
                                 <li>
                                     <a href="#">Purchase</a>
-                                </li>
+                                </li>*@
                                 <li>
                                     <a asp-controller="Dashboard" asp-action="Index">Dashboard</a>
                                 </li>
@@ -288,7 +295,10 @@
                 </div>
             </div>
         </div>
-
+        <hr />
+        here...
+        {{allNews.length}}
+        <hr />
         <!-- Featured Posts Grid -->
         <section class="featured-posts-grid bg-dark">
             <div class="container clearfix">
@@ -1934,27 +1944,27 @@
                                 <i class="ui-facebook"></i>
                             </a>
                             <!--
-                            -->
+                        -->
                             <a class="social social-twitter social--large" href="#" title="twitter" target="_blank" aria-label="twitter">
                                 <i class="ui-twitter"></i>
                             </a>
                             <!--
-                            -->
+                        -->
                             <a class="social social-google-plus social--large" href="#" title="google" target="_blank" aria-label="google">
                                 <i class="ui-google"></i>
                             </a>
                             <!--
-                            -->
+                        -->
                             <a class="social social-instagram social--large" href="#" title="instagram" target="_blank" aria-label="instagram">
                                 <i class="ui-instagram"></i>
                             </a>
                             <!--
-                            -->
+                        -->
                             <a class="social social-youtube social--large" href="#" title="youtube" target="_blank" aria-label="youtube">
                                 <i class="ui-youtube"></i>
                             </a>
                             <!--
-                            -->
+                        -->
                             <a class="social social-rss social--large" href="#" title="rss" target="_blank" aria-label="rss">
                                 <i class="ui-rss"></i>
                             </a>
@@ -2049,16 +2059,16 @@
                                             <li class="entry__meta-rating">
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star-outline"></i>
                                             </li>
                                         </ul>
@@ -2082,16 +2092,16 @@
                                             <li class="entry__meta-rating">
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star-outline"></i>
                                             </li>
                                         </ul>
@@ -2115,16 +2125,16 @@
                                             <li class="entry__meta-rating">
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star-outline"></i>
                                             </li>
                                         </ul>
@@ -2148,16 +2158,16 @@
                                             <li class="entry__meta-rating">
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star"></i>
                                                 <!--
-                                                -->
+                                            -->
                                                 <i class="ui-star-outline"></i>
                                             </li>
                                         </ul>

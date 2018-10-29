@@ -29,35 +29,35 @@
 <div>
     <table class="table table-responsive table-hover table-striped" id="newsinfotable" style="cursor:pointer;">
         <thead>
-            <tr class="text-center">
-                <th class="text-center">
+            <tr >
+                @*<th class="text-center">
                     @Html.DisplayNameFor(model => model.Newsserial)
-                </th>
-                <th class="text-center">
+                </th>*@
+                <th >
                     @Html.DisplayNameFor(model => model.Title)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.Category)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.Description)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.Author)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.Datetime)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.Keyword)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.CaptionPicture)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.Editor)
                 </th>
-                <th class="text-center">
+                <th >
                     @Html.DisplayNameFor(model => model.FeatureNews)
                 </th>
                 <th></th>
@@ -68,38 +68,50 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td class="text-center">
+                    @*<td class="text-center">
                         @Html.DisplayFor(modelItem => item.Newsserial)
-                    </td>
-                    <td style="width:15%;" class="text-center">
+                    </td>*@
+                    <td  >
                         @Html.DisplayFor(modelItem => item.Title)
                     </td>
-                    <td style="width:10%;" class="text-center">
+                    <td  >
                         @Html.DisplayFor(modelItem => item.Category)
                     </td>
-                    <td class="my text-center" style="width:30%;">
+                    <td >
                         @Html.Raw(item.Description)
                     </td>
-                    <td style="width:10%;" class="text-center">
+                    <td >
                         @Html.DisplayFor(modelItem => item.Author)
                     </td>
-                    <td style="width:10%;" class="text-center">
+                    <td  >
                         @Html.DisplayFor(modelItem => item.Datetime)
                     </td>
-                    <td style="width:10%;" class="text-center">
+                    <td >
                         @Html.DisplayFor(modelItem => item.Keyword)
                     </td>
 
-                    <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.CaptionPicture)
+                    <td>
+                        @if (item.CaptionPicture != null && System.IO.File.Exists(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot", "featuresNews\\" + item.CaptionPicture)))
+                        {
+                            <img src="~/featuresNews/@Html.DisplayFor(modelItem => item.CaptionPicture)" alt="@item.Title"
+                                 width="100" height="100" class="img-responsive" style="border:1px solid #808080" />
+                            <br />
+                            @Html.ActionLink("Change Picture", "CaptionImage", new { id = item.Newsserial })
+                        }
+                        else
+                        {
+                            <img src="~/featuresNews/noimage.png" alt="No Image" width="100" height="100" class="img-responsive" style="border:1px solid #808080" />
+                            <br />
+                            @Html.ActionLink("Upload Picture", "CaptionImage", new { id = item.Newsserial })
+                        }
                     </td>
-                    <td class="text-center">
+                    <td >
                         @Html.DisplayFor(modelItem => item.Editor)
                     </td>
-                    <td class="text-center">
+                    <td >
                         @Html.DisplayFor(modelItem => item.FeatureNews)
                     </td>
-                    <td style="width:15%;" class="text-center">
+                    <td style="width:15%;">
                         <a asp-action="Edit" asp-route-id="@item.Newsserial">
                             <span class="blue">
                                 <i class="ace-icon fa fa-search-plus bigger-120"></i>
